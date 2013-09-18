@@ -268,6 +268,8 @@ class BPSimpleBlogPostEditForm {
             'can_user_can_post' => false,
             'custom_fields'=>false,
             'upload_count' => 0,
+            'comment_status' => false,
+            'show_comment_option' => false,
             'current_user_can_post' => is_user_logged_in() //it may be a bad decision on my part, do we really want to allow all logged in users to post?
         );
 
