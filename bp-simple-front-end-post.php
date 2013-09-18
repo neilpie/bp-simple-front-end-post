@@ -324,8 +324,8 @@ class BPSimpleBlogPostEditForm {
 
 
         $default = array(
-            'title' => $_POST['bp_simple_post_title'],
-            'content' => $_POST['bp_simple_post_text']
+            'title' => isset( $_POST['bp_simple_post_title'] ) ? $_POST['bp_simple_post_title'] : '',
+            'content' => isset( $_POST['bp_simple_post_text'] ) ? $_POST['bp_simple_post_text'] : '',
         );
 
         if (!empty($post_id)) {
